@@ -12,3 +12,5 @@
     - record and play back your dreams
 - mind-controlled go-kart (Sayan)
 - mind-controlled smash (Sayan)
+- mind-controlled pain detector and/or classifier (Samir)
+- classification and/or grouping of stored memories/dreams - if no grouping exists, define (Samir)
