@@ -14,3 +14,5 @@
 - mind-controlled smash (Sayan)
 - mind-controlled pain detector and/or classifier (Samir)
 - classification and/or grouping of stored memories/dreams - if no grouping exists, define (Samir)
+- Empathy Evolved -> A way to amplify emotion and transfer those signals to another person using headsets (Ahmed)
+- Smart Home extended -> If anything is left on after you fall asleep it automatically turns off to save power (Hisham)
