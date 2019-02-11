@@ -12,3 +12,5 @@
     - record and play back your dreams
 - mind-controlled go-kart (Sayan)
 - mind-controlled smash (Sayan)
+- Empathy Evolved -> A way to amplify emotion and transfer those signals to another person using headsets (Ahmed)
+- Smart Home extended -> If anything is left on after you fall asleep it automatically turns off to save power (Hisham)
