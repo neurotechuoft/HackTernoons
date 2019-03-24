@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="./smoothie.js"></script>
+    <script type="text/javascript" src="data.json"></script>
+    <style>
+      
+    </style>
+    <script type="text/javascript">
+      console.log(data);
+
+      // Every 500ms, read a piece of data from the input string.
+      var attentionData = data.attention;
+      var meditationData = data.meditation;
+      var dataIndex = 0;
+
+      var attentionStream = new TimeSeries();
+      var meditationStream = new TimeSeries();
+
+      setInterval(function() {
+        attentionStream.append(new Date().getTime(), attentionData[dataIndex]);
+        meditationStream.append(new Date().getTime(), meditationData[dataIndex]);
+        dataIndex++;
+      }, 500);
+
+      function createTimeline() {
+        var chart = new SmoothieChart();
+        chart.addTimeSeries(attentionStream, { strokeStyle: 'rgba(0, 255, 0, 1)', fillStyle: '', lineWidth: 4 });
+        chart.addTimeSeries(meditationStream, { strokeStyle: 'rgba(0, 0, 255, 1)', fillStyle: '', lineWidth: 4 });
+        chart.streamTo(document.getElementById("chart"), 500); // **
+      }
+    </script>
+  </head>
+  <body onload="createTimeline()">
+    <canvas id="chart" width="1000" height="200"></canvas>
+    <p>
+      Above, we have the mediation and attention levels of a student watching an educational video from an EEG.
+    </p>
+    <br\>
+    <p>
+      Can you tell the points at which they may have been confused?
+    </p>
+    <br\>
+    <p>
+      Dataset and more information at: https://www.kaggle.com/wanghaohan/confused-eeg
+    </p>
+  </body>
+</html>
