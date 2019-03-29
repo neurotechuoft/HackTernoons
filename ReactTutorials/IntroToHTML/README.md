@@ -1,12 +1,10 @@
-# NeurotechUofTFrontendTutorial
+# Introduction to HTML, CSS, and JavaScript
 
 ### Overview
-This is a frontend tutorial meant for complete beginners. In this project, we will first make a basic webpage using HTML / CSS to plot data from a CSV file. The sample data in this repository are responses from an EEG.
-
-After we have the basic web-page built, we will transition the project into a ReactJS app. Here, we will be able to connect the Muse EEG headset to the app, and plot **actual** data from your brain, in real time!
+This is a frontend tutorial meant for complete beginners. In this project, we will first make a basic webpage using HTML / CSS to display EEG brainwave data from a CSV file.
 
 #### Part 1: HTML Programming
-Every HTML page starts off with the initial structure below.
+Create a new folder, and then create a file inside called ```index.html```. Every HTML page starts off with the initial structure below.
 ```html
 <!DOCTYPE html>
 <html>
@@ -23,6 +21,26 @@ The ```<head>``` and ```<body>``` tags split up the region of the webpage, as sh
 
 <a ><img src="./HTMLStructure.png" width="240" height="180" /></a>
 
-All HTML elements placed inside the ```<body>``` tag will be shown in the CONTENT region shown in the above photo. In this tutorial, we will store everything in the  ```<body>``` tag.
+All HTML elements placed inside the ```<body>``` tag will be shown in the CONTENT region.
 
-We'll start by adding a header to the page.
+For example, let's add a ```<p>``` element inside the ```<body>``` tag, like so:
+
+```html
+<body>
+  <p>
+    Hello world!
+  </p>
+</body>
+```
+
+This should give us a plain webpage that prints "Hello world!" in the CONTENT region. Great!
+
+Now we will insert the following HTML element inside the ```<body>```  tag
+
+```html
+<canvas id="chart" width="1000" height="200"></canvas>
+```
+
+Here we've made a  ```<canvas>``` element that has a width of 1000 pixels, and a height of 200 pixels. You can think of this element as a blank canvas on the webpage, which we can draw on using JavaScript (our next step)
+
+Now download 
