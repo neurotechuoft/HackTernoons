@@ -4,9 +4,7 @@ Welcome to NeurotechUofT HackTernoons! This is a general hacking session for **a
 
 ## New Members
 
-New to neuroscience and neurotechnology? **No problem!** Follw this quick start-up guide to get you more familiarized with the **why, importance, and basics of neuroscience**. Then we will guide you through **programming fundamentals** to give you a **foundation to develop neurotech apps/experiments**. Feel free to skip over concepts you are already comfortable with. First, we would first like you to create a github account as most of our material is on this github repository. 
-
-(insert start up tasks here)
+New to neuroscience and neurotechnology? **No problem!** Follw this quick start-up guide to get you more familiarized with the **why, importance, and basics of neuroscience**. Then we will guide you through **programming fundamentals** to give you a **foundation to develop neurotech apps/experiments**. Feel free to skip over concepts you are already comfortable with. First, we would first like you to create a github account as most of our material is on this github repository. Follow through our Start Here! tasks on our task board to get started!
 
 ## Experienced Members
 
