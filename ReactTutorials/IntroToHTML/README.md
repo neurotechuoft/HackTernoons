@@ -43,4 +43,4 @@ Now we will insert the following HTML element inside the ```<body>```  tag
 
 Here we've made a  ```<canvas>``` element that has a width of 1000 pixels, and a height of 200 pixels. You can think of this element as a blank canvas on the webpage, which we can draw on using JavaScript (our next step)
 
-Now download 
+Now download the following files, and place them in your project folder:  [smoothie.js](https://github.com/neurotechuoft/HackTernoons/blob/master/ReactTutorials/IntroToHTML/smoothie.js), 
