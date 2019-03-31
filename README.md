@@ -1,6 +1,6 @@
 # HackTernoons
 
-Welcome to NeurotechUofT HackTernoons! This is a general hacking session for **all people that are interested in neurotechnology**. Come and hack with us: **learn, research, develop your own projects/experiments, and/or contribute to our club projects**. If you don't have a general idea of what to do BUT have any sort of interest in neurotech, you can use our task board as inspiration or guide to what you could work on. Plus, there's **free coffee and donuts**! 
+Welcome to NeurotechUofT HackTernoons! This is a general hacking session for **all people that are interested in neurotechnology**. We have EEG headsets and resources all available for use! Come and hack with us: **learn, research, develop your own projects/experiments, and/or contribute to our club projects**. If you don't have a general idea of what to do BUT have any sort of interest in neurotech, you can use our task board as inspiration or guide to what you could work on. Plus, there's **free coffee and donuts**! 
 
 ## New Members
 
