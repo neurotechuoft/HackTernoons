@@ -12,17 +12,17 @@ New to neuroscience and neurotechnology? **No problem!** Follw this quick start-
 
 Great now you've finished the start-up guide OR you are already familiar with neuroscience and progamming. Now what? This depends on what your goals are with neurotech. 
 
-###### Research/Experiments
+#### Research/Experiments
 
 Currently, we are working on our own EEG headset interfacing program that will help with data collection, analysis, preprocessing. However, if you wish to collect or play around with raw EEG data, feel free to grab one of our headsets and use angular muse
 
-###### App development
+#### App development
 
 If you already have an app idea in mind, start hacking away at our HackTernoons! If you require further research or knowledge then you can resort to our NeurotechTheory Tasks to guide you through.
 
 If you don't have an idea, that's ok too! You can do our Computer Science Tasks to build smaller apps and use those as inspiration!
 
-###### Contributing to club projects
+#### Contributing to club projects
 
 Currently, we are working out the specifics of our own EEG headset interfacing program. We will have tasks that YOU can do to develop this program soon.
 
