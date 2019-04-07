@@ -47,9 +47,10 @@ Now download the following files, and place them in your project folder:  [smoot
 
 EEG_data is a csv file from real EEG data (of confused students, see article at: https://www.kaggle.com/wanghaohan/confused-eeg)! I've taken the 'Attention' column, and transposed it into EEGDataParsedAttention.csv. And then, I stored this into a JavaScript object, and placed that data in data.json.
 
-
 Take a look at the code at [index.html](https://github.com/neurotechuoft/HackTernoons/blob/master/ReactTutorials/IntroToHTML/index.html). Try copy pasting the JavaScript code from that file into your index.html file, and see what happens!
 
-Try and figure out how that JavaScipt code works. Also, as you can see, I manually parsed the data I needed from EEG_data into the format I wanted for processing. Do you think you can write a JavaScript function to automate this process?
+Try and figure out how that JavaScipt code works. It will help a lot to check out documentation on smoothie.js, at http://smoothiecharts.org/tutorial.html.
+
+Also, as you can see, I manually parsed the data I needed from EEG_data into the format I wanted for processing. Do you think you can write a JavaScript function to automate this process?
 
 #### Part 2: Connecting to Python backend (Not necessarily the order, but would like to have this eventually included in the tutorial)
