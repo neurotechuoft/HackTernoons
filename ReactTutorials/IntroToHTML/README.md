@@ -57,18 +57,15 @@ Also, as you can see, I manually parsed the data I needed from EEG_data into the
 
 By the end of this section, you should have something that looks like this!
 
-
-
-
-
-<a ><img src="./html_demo.gif" width="240" height="180" /></a>
-
-
+<a ><img src="./html_demo.gif" width="700" height="300" /></a>
 
 </details>
 <details>
 <summary>Part 2: Intro to CSS Grid</summary>
-A great introduction to CSS Grid that I've found can be seen at: https://www.youtube.com/watch?v=jV8B24rSN5o&
+
+Now for further organizing where to lay out the components of our webpage, we use the CSS grid. A great tutorial on that topic was created by Mozilla, at: https://hacks.mozilla.org/2017/10/an-introduction-to-css-grid-layout-part-1/
+
+Try to re-organize the location of where the text and graphs are located!
 
 </details>
 
