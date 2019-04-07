@@ -3,7 +3,9 @@
 ### Overview
 This is a frontend tutorial meant for complete beginners. In this project, we will first make a basic webpage using HTML / CSS to display EEG brainwave data from a CSV file.
 
-#### Part 1: HTML Programming
+<details>
+<summary>Part 1: HTML Programming</summary>
+
 Create a new folder, and then create a file inside called ```index.html```. Every HTML page starts off with the initial structure below.
 ```html
 <!DOCTYPE html>
@@ -52,5 +54,22 @@ Take a look at the code at [index.html](https://github.com/neurotechuoft/HackTer
 Try and figure out how that JavaScipt code works. It will help a lot to check out documentation on smoothie.js, at http://smoothiecharts.org/tutorial.html.
 
 Also, as you can see, I manually parsed the data I needed from EEG_data into the format I wanted for processing. Do you think you can write a JavaScript function to automate this process?
+
+By the end of this section, you should have something that looks like this!
+
+
+
+
+
+<a ><img src="./html_demo.gif" width="240" height="180" /></a>
+
+
+
+</details>
+<details>
+<summary>Part 2: Intro to CSS Grid</summary>
+A great introduction to CSS Grid that I've found can be seen at: https://www.youtube.com/watch?v=jV8B24rSN5o&
+
+</details>
 
 #### Part 2: Connecting to Python backend (Not necessarily the order, but would like to have this eventually included in the tutorial)
