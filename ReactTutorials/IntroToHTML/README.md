@@ -52,4 +52,4 @@ Take a look at the code at [index.html](https://github.com/neurotechuoft/HackTer
 
 Try and figure out how that JavaScipt code works. Also, as you can see, I manually parsed the data I needed from EEG_data into the format I wanted for processing. Do you think you can write a JavaScript function to automate this process?
 
-#### Connecting to Python backend
+#### Part 2: Connecting to Python backend
