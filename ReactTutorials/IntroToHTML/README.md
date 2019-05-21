@@ -35,7 +35,7 @@ For example, let's add a ```<p>``` element inside the ```<body>``` tag, like so:
 </body>
 ```
 
-This should give us a plain webpage that prints "Hello world!" in the CONTENT region. Great! You can remove this element now if you want.
+This should give us a plain webpage that prints "Hello world!" in the CONTENT region (you can open index.html in a web browser to see). Great! You can remove this element now if you want.
 
 Now we will insert the following HTML element inside the ```<body>```  tag
 
@@ -45,22 +45,17 @@ Now we will insert the following HTML element inside the ```<body>```  tag
 
 Here we've made a  ```<canvas>``` element that has a width of 1000 pixels, and a height of 200 pixels. You can think of this element as a blank canvas on the webpage, whaich we can draw on using JavaScript (our next step)
 
-Now download the following files, and place them in your project folder:  [smoothie.js](https://github.com/neurotechuoft/HackTernoons/blob/master/ReactTutorials/IntroToHTML/smoothie.js),  [EEG_data.csv](https://github.com/neurotechuoft/HackTernoons/blob/master/ReactTutorials/IntroToHTML/EEG_data.csv), [EEGDataParsedAttention.csv](https://github.com/neurotechuoft/HackTernoons/blob/master/ReactTutorials/IntroToHTML/EEGDataParsedAttention.csv), [data.json](https://github.com/neurotechuoft/HackTernoons/blob/master/ReactTutorials/IntroToHTML/data.json)
+Now download the following files, and place them in your project folder:  [smoothie.js](https://github.com/neurotechuoft/HackTernoons/blob/master/ReactTutorials/IntroToHTML/smoothie.js),  [EEG_data.csv](https://github.com/neurotechuoft/HackTernoons/blob/master/ReactTutorials/IntroToHTML/data/EEG_data.csv), [EEGDataParsedAttention.csv](https://github.com/neurotechuoft/HackTernoons/blob/master/ReactTutorials/IntroToHTML/data/EEGDataParsedAttention.csv), [data.json](https://github.com/neurotechuoft/HackTernoons/blob/master/ReactTutorials/IntroToHTML//data/data.json)
 
 EEG_data is a csv file from real EEG data (of confused students, see article at: https://www.kaggle.com/wanghaohan/confused-eeg)! I've taken the 'Attention' column, and transposed it into EEGDataParsedAttention.csv. And then, I stored this into a JavaScript object, and placed that data in data.json. I've done this manually, but perhaps you can write a script to automate this process? (an important task in Data Science)
 
-Now we will add some JavaScript. Insert an HTML ```<script>``` element right below the body tag, as so:
+Now we will add some JavaScript. Insert an HTML ```<script>``` element right below the body tag, like so:
 
 ```html
-<!DOCTYPE html>
-<html>
-  <head>
-  </head>
   <body>
   </body>
   <script>
   </script>
-</html>
 ```
 
 The HTML ```<script>``` element works a bit differently. Everything inside a ```<script>``` tag will be JavaScript code that is run on the webpage. The ```<script>``` element does not describe what the webpage looks like, but rather adds functionality to the webpage.
@@ -95,7 +90,7 @@ In addition, copy and paste the following third script element, as such:
   <body>
   </body>
   <script src="./smoothie.js"></script>
-  <script src="./data.json"></script>
+  <script src="./data/data.json"></script>
   <script>
     console.log(data);
     // Every 500ms, read a piece of data from the input string.
