@@ -79,7 +79,8 @@ Beside the ```script``` text of the ```<script>``` tag we added an ```src``` att
 
 Note also that in file paths, "./" denotes your current directory. You can create a new folder called ```data```, place all the EEG data files in that folder, and then change the script ```src``` to be "./data/data.json" to clean things up. We'll be doing that here, so now we have instead:
 
-```  <script src="./data/data.json"></script>
+```html
+<script src="./data/data.json"></script>
 ```
 
 In addition, copy and paste the following third script element, as such:
@@ -93,7 +94,7 @@ In addition, copy and paste the following third script element, as such:
   </head>
   <body>
   </body>
-  <script src="./smoothie.js"><script>
+  <script src="./smoothie.js"></script>
   <script src="./data.json"></script>
   <script>
     console.log(data);
