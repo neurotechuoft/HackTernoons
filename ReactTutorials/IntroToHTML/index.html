@@ -2,32 +2,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script type="text/javascript" src="./smoothie.js"></script>
-    <script type="text/javascript" src="data.json"></script>
-    <script type="text/javascript">
-      console.log(data);
-
-      // Every 500ms, read a piece of data from the input string.
-      var attentionData = data.attention;
-      var meditationData = data.meditation;
-      var dataIndex = 0;
-
-      var attentionStream = new TimeSeries();
-      var meditationStream = new TimeSeries();
-
-      setInterval(function() {
-        attentionStream.append(new Date().getTime(), attentionData[dataIndex]);
-        meditationStream.append(new Date().getTime(), meditationData[dataIndex]);
-        dataIndex++;
-      }, 500);
-
-      function createTimeline() {
-        var chart = new SmoothieChart();
-        chart.addTimeSeries(attentionStream, { strokeStyle: 'rgba(0, 255, 0, 1)', fillStyle: '', lineWidth: 4 });
-        chart.addTimeSeries(meditationStream, { strokeStyle: 'rgba(0, 0, 255, 1)', fillStyle: '', lineWidth: 4 });
-        chart.streamTo(document.getElementById("chart"), 500); // **
-      }
-    </script>
   </head>
   <body onload="createTimeline()">
     <canvas id="chart" width="1000" height="200"></canvas>
@@ -43,4 +17,30 @@
       Dataset and more information at: https://www.kaggle.com/wanghaohan/confused-eeg
     </p>
   </body>
+  <script type="text/javascript" src="./smoothie.js"></script>
+  <script type="text/javascript" src="data.json"></script>
+  <script type="text/javascript">
+    console.log(data);
+
+    // Every 500ms, read a piece of data from the input string.
+    var attentionData = data.attention;
+    var meditationData = data.meditation;
+    var dataIndex = 0;
+
+    var attentionStream = new TimeSeries();
+    var meditationStream = new TimeSeries();
+
+    setInterval(function() {
+      attentionStream.append(new Date().getTime(), attentionData[dataIndex]);
+      meditationStream.append(new Date().getTime(), meditationData[dataIndex]);
+      dataIndex++;
+    }, 500);
+
+    function createTimeline() {
+      var chart = new SmoothieChart();
+      chart.addTimeSeries(attentionStream, { strokeStyle: 'rgba(0, 255, 0, 1)', fillStyle: '', lineWidth: 4 });
+      chart.addTimeSeries(meditationStream, { strokeStyle: 'rgba(0, 0, 255, 1)', fillStyle: '', lineWidth: 4 });
+      chart.streamTo(document.getElementById("chart"), 500); // **
+    }
+  </script>
 </html>
