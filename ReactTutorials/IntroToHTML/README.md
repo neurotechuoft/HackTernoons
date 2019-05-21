@@ -49,8 +49,6 @@ Now download the following files, and place them in your project folder:  [smoot
 
 EEG_data is a csv file from real EEG data (of confused students, see article at: https://www.kaggle.com/wanghaohan/confused-eeg)! I've taken the 'Attention' column, and transposed it into EEGDataParsedAttention.csv. And then, I stored this into a JavaScript object, and placed that data in data.json. I've done this manually, but perhaps you can write a script to automate this process? (an important task in Data Science)
 
-Take a look at the code at [index.html](https://github.com/neurotechuoft/HackTernoons/blob/master/ReactTutorials/IntroToHTML/index.html). Try copy pasting the JavaScript code from that file into your index.html file, and see what happens!
-
 Now we will add some JavaScript. Insert an HTML ```<script>``` element right below the body tag, as so:
 
 ```html
@@ -71,7 +69,7 @@ The HTML ```<script>``` element works a bit differently. Everything inside a ```
 https://www.youtube.com/watch?v=AD5hxsFJc4o&t=120s)
 
 
-Back to the project. Copy and paste the following code into your script elements, as such:
+Back to the project. Copy and paste the following script elements, as such:
 <details>
 <summary>Script element code **(click here!)**</summary>
 
@@ -83,27 +81,27 @@ Back to the project. Copy and paste the following code into your script elements
   <body>
   </body>
   <script type="text/javascript" src="./smoothie.js"></script>
-      <script type="text/javascript" src="data.json"></script>
-      <script type="text/javascript">
-        console.log(data);
-        // Every 500ms, read a piece of data from the input string.
-        var attentionData = data.attention;
-        var meditationData = data.meditation;
-        var dataIndex = 0;
-        var attentionStream = new TimeSeries();
-        var meditationStream = new TimeSeries();
-        setInterval(function() {
-          attentionStream.append(new Date().getTime(), attentionData[dataIndex]);
-          meditationStream.append(new Date().getTime(), meditationData[dataIndex]);
-          dataIndex++;
-        }, 500);
-        function createTimeline() {
-          var chart = new SmoothieChart();
-          chart.addTimeSeries(attentionStream, { strokeStyle: 'rgba(0, 255, 0, 1)', fillStyle: '', lineWidth: 4 });
-          chart.addTimeSeries(meditationStream, { strokeStyle: 'rgba(0, 0, 255, 1)', fillStyle: '', lineWidth: 4 });
-          chart.streamTo(document.getElementById("chart"), 500); // **
-        }
-      </script>
+  <script type="text/javascript" src="data.json"></script>
+  <script type="text/javascript">
+    console.log(data);
+    // Every 500ms, read a piece of data from the input string.
+    var attentionData = data.attention;
+    var meditationData = data.meditation;
+    var dataIndex = 0;
+    var attentionStream = new TimeSeries();
+    var meditationStream = new TimeSeries();
+    setInterval(function() {
+      attentionStream.append(new Date().getTime(), attentionData[dataIndex]);
+      meditationStream.append(new Date().getTime(), meditationData[dataIndex]);
+      dataIndex++;
+    }, 500);
+    function createTimeline() {
+      var chart = new SmoothieChart();
+      chart.addTimeSeries(attentionStream, { strokeStyle: 'rgba(0, 255, 0, 1)', fillStyle: '', lineWidth: 4 });
+      chart.addTimeSeries(meditationStream, { strokeStyle: 'rgba(0, 0, 255, 1)', fillStyle: '', lineWidth: 4 });
+      chart.streamTo(document.getElementById("chart"), 500); // **
+    }
+  </script>
 </html>
 ```
 </details>
