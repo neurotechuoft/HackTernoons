@@ -75,11 +75,14 @@ Back to the project. We downloaded a few data/code files from before and placed 
   <script src="./data.json"></script>
 ```
 
-Beside the ```script``` text of the ```<script>``` tag we added an ```src``` attribute. This attribute is assigned a path to a JavaScript file, and all the code inside that file is placed inside the tag. Check out the [optional youtube video](https://www.youtube.com/watch?v=AD5hxsFJc4o&t=120s) to learn more about this idea.
+Beside the ```script``` text of the ```<script>``` tag we added an ```src``` attribute. This attribute is assigned a path to a JavaScript file, and all the code inside that JS file is placed inside the tag. Check out the [optional youtube video](https://www.youtube.com/watch?v=AD5hxsFJc4o&t=120s) to learn more about this idea.
 
-Note also that in file paths, "./" denotes your current directory. You can create a new folder called ```data```, place all the data EEG data files in that folder, and then change the script src to "./data/data.json" to clean things up. We'll be doing that here.
+Note also that in file paths, "./" denotes your current directory. You can create a new folder called ```data```, place all the EEG data files in that folder, and then change the script ```src``` to be "./data/data.json" to clean things up. We'll be doing that here, so now we have instead:
 
-In addition, copy and paste the following script elements, as such:
+```  <script src="./data/data.json"></script>
+```
+
+In addition, copy and paste the following third script element, as such:
 <details>
 <summary>Script element code **(click here!)**</summary>
 
@@ -90,7 +93,9 @@ In addition, copy and paste the following script elements, as such:
   </head>
   <body>
   </body>
-  <script type="text/javascript">
+  <script src="./smoothie.js"><script>
+  <script src="./data.json"></script>
+  <script>
     console.log(data);
     // Every 500ms, read a piece of data from the input string.
     var attentionData = data.attention;
