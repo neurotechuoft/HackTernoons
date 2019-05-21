@@ -69,7 +69,17 @@ The HTML ```<script>``` element works a bit differently. Everything inside a ```
 https://www.youtube.com/watch?v=AD5hxsFJc4o&t=120s)
 
 
-Back to the project. Copy and paste the following script elements, as such:
+Back to the project. We downloaded a few data/code files from before and placed them in our project folder. Let's add them to our webpage by adding these two elements:
+```html
+  <script src="./smoothie.js"></script>
+  <script src="./data.json"></script>
+```
+
+Beside the ```script``` text of the ```<script>``` tag we added an ```src``` attribute. This attribute is assigned a path to a JavaScript file, and all the code inside that file is placed inside the tag. Check out the [optional youtube video](https://www.youtube.com/watch?v=AD5hxsFJc4o&t=120s) to learn more about this idea.
+
+Note also that in file paths, "./" denotes your current directory. You can create a new folder called ```data```, place all the data EEG data files in that folder, and then change the script src to "./data/data.json" to clean things up. We'll be doing that here.
+
+In addition, copy and paste the following script elements, as such:
 <details>
 <summary>Script element code **(click here!)**</summary>
 
@@ -80,8 +90,6 @@ Back to the project. Copy and paste the following script elements, as such:
   </head>
   <body>
   </body>
-  <script type="text/javascript" src="./smoothie.js"></script>
-  <script type="text/javascript" src="data.json"></script>
   <script type="text/javascript">
     console.log(data);
     // Every 500ms, read a piece of data from the input string.
@@ -105,7 +113,6 @@ Back to the project. Copy and paste the following script elements, as such:
 </html>
 ```
 </details>
-
 
 
 Try and figure out how that JavaScipt code works. It will help a lot to check out documentation on smoothie.js, at http://smoothiecharts.org/tutorial.html.
