@@ -70,40 +70,40 @@ Back to the project. We downloaded a few data/code files from before and placed 
   <script src="./data.json"></script>
 ```
 
-Beside the ```script``` text of the ```<script>``` tag we added an ```src``` attribute. This attribute is assigned a path to a JavaScript file, and all the code inside that JS file is placed inside the tag. Check out the [optional youtube video](https://www.youtube.com/watch?v=AD5hxsFJc4o&t=120s) to learn more about this idea.
+Beside the ```script``` text of the ```<script>``` tag we added an ```src``` attribute. This attribute is assigned a path to a JavaScript file. This essentially pastes the code inside that JS file inside the  ```script``` tag. Check out the [optional youtube video](https://www.youtube.com/watch?v=AD5hxsFJc4o&t=120s) to learn more about this idea.
 
-Note also that in file paths, "./" denotes your current directory. You can create a new folder called ```data```, place all the EEG data files in that folder, and then change the script ```src``` to be "./data/data.json" to clean things up. We'll be doing that here, so now we have instead:
-
-```html
-<script src="./data/data.json"></script>
-```
-
-In addition, copy and paste the following third script element, as such:
+In addition, copy and paste this following third script element, so that your code looks like the following:
 <details>
 <summary>Script element code **(click here!)**</summary>
 
 ```html
+
 <!DOCTYPE html>
 <html>
   <head>
   </head>
-  <body>
+  <body onload="createTimeline()">
+    <canvas id="chart" width="1000" height="200"></canvas>
   </body>
   <script src="./smoothie.js"></script>
   <script src="./data/data.json"></script>
   <script>
     console.log(data);
+
     // Every 500ms, read a piece of data from the input string.
     var attentionData = data.attention;
     var meditationData = data.meditation;
     var dataIndex = 0;
+
     var attentionStream = new TimeSeries();
     var meditationStream = new TimeSeries();
+
     setInterval(function() {
       attentionStream.append(new Date().getTime(), attentionData[dataIndex]);
       meditationStream.append(new Date().getTime(), meditationData[dataIndex]);
       dataIndex++;
     }, 500);
+
     function createTimeline() {
       var chart = new SmoothieChart();
       chart.addTimeSeries(attentionStream, { strokeStyle: 'rgba(0, 255, 0, 1)', fillStyle: '', lineWidth: 4 });
@@ -112,6 +112,7 @@ In addition, copy and paste the following third script element, as such:
     }
   </script>
 </html>
+
 ```
 </details>
 
