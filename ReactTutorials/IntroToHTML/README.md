@@ -3,6 +3,8 @@
 ### Overview
 This is a frontend tutorial meant for complete beginners. In this project, we will first make a basic webpage using HTML / CSS to display EEG brainwave data from a CSV file.
 
+The final project folder is located in the 'project' directory of this repository.
+
 <details>
 <summary>Part 1: HTML Programming **(click here!)**</summary>
 
